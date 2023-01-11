@@ -5,8 +5,9 @@ export default {
   title: 'Data display/Tooltip',
   component: Tooltip,
   args: {
-    description: 'This is the Tooltip element',
-    children: <Button>Hover me!</Button>,
+    description: '21 de Outubro - Indisponível',
+    children: <Button>Button</Button>,
+    defaultOpen: true,
   },
   argTypes: {
     children: {

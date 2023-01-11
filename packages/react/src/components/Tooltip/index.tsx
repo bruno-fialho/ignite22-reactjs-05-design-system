@@ -11,6 +11,7 @@ import {
 
 export interface TooltipProps extends ComponentProps<typeof TooltipProvider> {
   description: string
+  defaultOpen?: boolean
 }
 
 export function Tooltip(props: TooltipProps) {
@@ -20,6 +21,7 @@ export function Tooltip(props: TooltipProps) {
     delayDuration,
     skipDelayDuration,
     disableHoverableContent,
+    defaultOpen = false,
   } = props
 
   return (
@@ -28,7 +30,7 @@ export function Tooltip(props: TooltipProps) {
       skipDelayDuration={skipDelayDuration}
       disableHoverableContent={disableHoverableContent}
     >
-      <TooltipRoot>
+      <TooltipRoot defaultOpen={defaultOpen}>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipPortal>
           <TooltipContent sideOffset={5}>

@@ -12,8 +12,11 @@ export const TooltipContent = styled(Tooltip.Content, {
   backgroundColor: '$gray900',
   borderRadius: '$sm',
 
-  fontFamily: '$default',
+  fontFamily: '$tooltip',
+  fontSize: '$sm',
   fontWeight: '$medium',
+  lineHeight: '$short',
+  letterSpacing: '-0.09px',
 
   display: 'flex',
   flexDirection: 'column',
@@ -22,5 +25,7 @@ export const TooltipContent = styled(Tooltip.Content, {
 })
 
 export const TooltipArrow = styled(Tooltip.Arrow, {
+  width: '$4',
+  height: '$2',
   color: '$gray900',
 })
