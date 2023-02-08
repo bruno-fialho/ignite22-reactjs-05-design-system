@@ -1,0 +1,2 @@
+import{e as t,a as o}from"./index-cc8bef96.js";import{j as r}from"./jsx-runtime-c2142c84.js";import"./index-42521bac.js";import"./es.object.get-own-property-descriptor-64192e07.js";import"./index-4bd83974.js";const a={title:"Data display/Tooltip",component:t,args:{description:"21 de Outubro - Indisponível",children:r(o,{children:"Button"}),defaultOpen:!0},argTypes:{children:{control:{type:null}}}},l={},d=["Primary"];export{l as Primary,d as __namedExportsOrder,a as default};
+//# sourceMappingURL=Tooltip.stories-a3201cd6.js.map
