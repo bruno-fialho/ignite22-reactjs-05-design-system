@@ -24,11 +24,14 @@ jobs:
 
       - run: npm ci
 
+      - name: Update Version
+        run: npm run version-packages 
+
       - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm run release
+          publish: npm run publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
