@@ -1,3 +1,1 @@
 # Tokens
-
-- @bruno-fialho
