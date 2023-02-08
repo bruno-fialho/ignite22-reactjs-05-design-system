@@ -1,3 +1,1 @@
 # Storybook Docs
-
-- @bruno-fialho
